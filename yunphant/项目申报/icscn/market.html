@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>杭州纳尧数据技术有限公司</title>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/superslide.2.1.js"></script>
+</head>
+<body>
+<div class="nylogo"></div>
+<div class="nynav">
+<div class="nynavt">
+    <ul>
+      <li>
+        <a title="首页" href="index.html" class="k1"></a>
+      </li>
+      <li>
+        <a title="产品与解决方案" href="product.html" class="k2"></a>      </li>
+      <li>
+        <a title="市场与服务" href="market.html" class="k3 select"></a>
+      </li>
+      <li>
+        <a title="招贤纳士" href="jobs.html" class="k4"></a>
+      </li>
+      <li>
+        <a title="关于我们" href="about.html" class="k5"></a>
+      </li>
+    </ul>
+</div>
+</div>
+
+<div class="nybanner">
+  <div class="fullSlide">
+    <div class="bd">
+      <ul>
+        <li _src="url(images/img1.jpg)" style="background:#68a5e8 center 0 no-repeat;"><a href="#"></a></li>
+        <li _src="url(images/img2.jpg)" style="background:#68a5e8 center 0 no-repeat;"><a href="#"></a></li>
+        <li _src="url(images/img3.jpg)" style="background:#68a5e8 center 0 no-repeat;"><a href="#"></a></li>
+        <li _src="url(images/img4.jpg)" style="background:#68a5e8 center 0 no-repeat;"><a href="#"></a></li>
+      </ul>
+    </div>
+    <div class="hd">
+      <ul>
+      </ul>
+    </div>
+    <span class="prev"></span> <span class="next"></span></div>
+</div>
+	<div class="ny_middlen">
+   	 <div class="ny_scyfw">
+     <h3></h3>&nbsp;&nbsp;杭州纳尧数据以“客户发展，企业发展”的目标全心全意为客户服务，公司拥有完善的客户服务体系，提供7×24小时的技术热线支持，以团队的精神、热情的态度为广大客户提供技术支持和售前售后服务。</p>
+     <h4>1、服务范围</h4>
+     
+      <p>  1.1系统硬件故障、软件故障及其他损坏设备的修理。</p>
+      <p>  1.2备件备品的购买。</p>
+      <p>  1.3对系统问题的咨询服务。</p>
+      <p>  1.4重大事故或特殊故障的紧急远端或现场抢救。</p>
+      <p>  1.5其他必须的技术服务（例如定期或专门的软、硬件的版本升级）。</p>
+      <p>  1.6新版本技术资料、产品手册的提供。</p>
+     <p><h4>2、服务模式</h4>
+       <p>2.1我司为用户提供7×24小时的技术热线支持。内容包括技术咨询、故障排除指导、疑难解答、远端维护等。</p>
+      <p>  2.2我司的售后服务将采取电话远端支持和现场服务支持两种模式。</p>
+      <p>  2.3电话远端支持又分为简单电话维护和远端维护两类。简单电话维护是基于现场人员的申告，由售后服务工程师进行电话指导；而远端维护是指由公司本部维护中心通过远端维护设备与用户联机来帮助用户解决技术问题。</p>
+      <p>  2.4当用户现场发生问题，确需我们到现场解决的问题，我们将在第一时间安排技术人员赶到现场解决。对用户所在地有直达航班的，我们将在24小时内到现场，对用户所在地没有直达航班的客户，我们将在不大于48小时内到达现场进行维护。</p>
+        <p> 更多产品服务详情请咨询：0571-56660221杭州纳尧数据技术有限公司客户服务部。</p>
+       
+</div>
+	</div>
+<div class="ny_bot">
+  <p>&nbsp;</p>
+  <p>版权所有 2012-2014 杭州纳尧数据技术有限公司</p>
+  <p>7*24 全国客服热线：0571-56660221 http://www.nayaoinf.com </p>
+</div>
+<script type="text/javascript">
+jQuery(".fullSlide").hover(function() {
+    jQuery(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+},
+function() {
+    jQuery(this).find(".prev,.next").fadeOut()
+});
+jQuery(".fullSlide").slide({
+    titCell: ".hd ul",
+    mainCell: ".bd ul",
+    effect: "fold",
+    autoPlay: true,
+    autoPage: true,
+    trigger: "click",
+    startFun: function(i) {
+        var curLi = jQuery(".fullSlide .bd li").eq(i);
+        if ( !! curLi.attr("_src")) {
+            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+        }
+    }
+});
+</script>
+</body>
+</html>

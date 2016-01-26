@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>杭州纳尧数据技术有限公司</title>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/superslide.2.1.js"></script>
+</head>
+<body>
+<div class="nylogo"></div>
+<div class="nynav">
+<div class="nynavt">
+    <ul>
+      <li>
+        <a title="首页" href="index.html" class="k1"></a>
+      </li>
+      <li>
+        <a title="产品与解决方案" href="product.html" class="k2 select"></a>      </li>
+      <li>
+        <a title="市场与服务" href="market.html" class="k3"></a>
+      </li>
+      <li>
+        <a title="招贤纳士" href="jobs.html" class="k4"></a>
+      </li>
+      <li>
+        <a title="关于我们" href="about.html" class="k5"></a>
+      </li>
+    </ul>
+</div>
+</div>
+
+<div class="nybanner">
+  <div class="fullSlide">
+    <div class="bd">
+      <ul>
+        <li _src="url(images/img1.jpg)" style="background:#68a5e8 center 0 no-repeat;"><a href="#"></a></li>
+        <li _src="url(images/img2.jpg)" style="background:#68a5e8 center 0 no-repeat;"><a href="#"></a></li>
+        <li _src="url(images/img3.jpg)" style="background:#68a5e8 center 0 no-repeat;"><a href="#"></a></li>
+        <li _src="url(images/img4.jpg)" style="background:#68a5e8 center 0 no-repeat;"><a href="#"></a></li>
+      </ul>
+    </div>
+    <div class="hd">
+      <ul>
+      </ul>
+    </div>
+    <span class="prev"></span> <span class="next"></span></div>
+</div>
+	<div class="ny_middlen">
+   	 <div class="ny_cpyjjfa">
+     <h3></h3>
+     <h4>狱情分析系统 </h4>
+     <h5>背景       </h5>
+     <p>狱情信息的收集、分析、研判和处置是监狱管理工作中最基础、最基本、最细密的一项内容，左右着监管改造工作中所采取的方法、措施和决策，决定并影响着监管改造安全稳定工作。
+狱情动态分析系统：以罪犯个体信息为原点，整合监狱各业务子系统的数据，建立针对罪犯个体的评估模型。以罪犯实时发生的各类事件为计分要素，实现对罪犯危险等级和整体犯情趋势的预判预警，及时采取应对或预防措施，保障监管改造工作的安全稳定。</p>
+     <h5>系统框架 </h5>
+     <h6><img src="images/peit3.gif" /></h6>
+     <h5>系统特点</h5>
+      <h6><img src="images/peit4.gif" /></h6>
+<h5>系统价值</h5>
+     <p>为基层民警减负       </p>
+     <p>快速便捷的鼠标点击选择的信息手工录入模式       </p>
+     <p>系统自动从如会见、电话、大帐等其他业务同步相关罪犯信息       </p>
+     <p>自动生成报表台账       </p>
+     <p>信息共享：打破信息孤岛，将罪犯相关的个体信息进行卡片汇总和共享       </p>
+     <p>管理监督透明化：对各犯情处置过程、时间、处置人进行透明化监督管控 </p>
+     <p>&nbsp;</p>
+   	 </div>
+	</div>
+<div class="ny_bot">
+  <p>&nbsp;</p>
+  <p>版权所有 2012-2014 杭州纳尧数据技术有限公司</p>
+  <p>7*24 全国客服热线：0571-56660221 http://www.nayaoinf.com </p>
+</div>
+<script type="text/javascript">
+jQuery(".fullSlide").hover(function() {
+    jQuery(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+},
+function() {
+    jQuery(this).find(".prev,.next").fadeOut()
+});
+jQuery(".fullSlide").slide({
+    titCell: ".hd ul",
+    mainCell: ".bd ul",
+    effect: "fold",
+    autoPlay: true,
+    autoPage: true,
+    trigger: "click",
+    startFun: function(i) {
+        var curLi = jQuery(".fullSlide .bd li").eq(i);
+        if ( !! curLi.attr("_src")) {
+            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+        }
+    }
+});
+</script>
+</body>
+</html>

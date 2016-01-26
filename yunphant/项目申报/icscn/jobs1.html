@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>杭州纳尧数据技术有限公司</title>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/superslide.2.1.js"></script>
+</head>
+<body>
+<div class="nylogo"></div>
+<div class="nynav">
+<div class="nynavt">
+    <ul>
+      <li>
+        <a title="首页" href="index.html" class="k1"></a>
+      </li>
+      <li>
+        <a title="产品与解决方案" href="product.html" class="k2"></a>      </li>
+      <li>
+        <a title="市场与服务" href="market.html" class="k3"></a>
+      </li>
+      <li>
+        <a title="招贤纳士" href="jobs.html" class="k4 select"></a>
+      </li>
+      <li>
+        <a title="关于我们" href="about.html" class="k5"></a>
+      </li>
+    </ul>
+</div>
+</div>
+
+<div class="nybanner">
+  <div class="fullSlide">
+    <div class="bd">
+      <ul>
+        <li _src="url(images/img1.jpg)" style="background:#68a5e8 center 0 no-repeat;"><a href="#"></a></li>
+        <li _src="url(images/img2.jpg)" style="background:#68a5e8 center 0 no-repeat;"><a href="#"></a></li>
+        <li _src="url(images/img3.jpg)" style="background:#68a5e8 center 0 no-repeat;"><a href="#"></a></li>
+        <li _src="url(images/img4.jpg)" style="background:#68a5e8 center 0 no-repeat;"><a href="#"></a></li>
+      </ul>
+    </div>
+    <div class="hd">
+      <ul>
+      </ul>
+    </div>
+    <span class="prev"></span> <span class="next"></span></div>
+</div>
+	<div class="ny_middlen">
+   	 <div class="ny_zxns2">
+     <h3></h3>
+     <table width="99%" border="0" cellspacing="0" cellpadding="0" class="ny_zxnstb2">
+         <tr>
+           <th width="9%">职位名称:</th>
+           <td width="40%">项目经理/主管/开发经理</td>
+           <th width="9%">工作地点:</th>
+           <td>杭州市西湖区</td>
+       </tr>
+         <tr>
+           <th>招聘人数:</th>
+           <td>3人</td>
+           <th>工资待遇:</th>
+           <td>面议</td>
+       </tr>
+         <tr>
+           <th>有 效 期:
+           <td>2014.07.18-2014.10.18</td>
+           <td colspan="2">&nbsp;</td>
+       </tr>
+     </table>
+     <br />
+     <table width="99%" border="0" cellspacing="0" cellpadding="0" class="ny_zxnstb">
+       <tr class="hang_title">
+         <td>岗位职责：</td>
+       </tr>
+       <tr>
+         <td><p>1. 可以独立的进行需求调研、需求分析，形成产品原型设计；</p>
+           <p>2. 完成产品的界面、功能、流程设计，矫正产品研发方向；</p>
+           <p>3. 完成产品相关文档编写工作；</p>
+         <p>4. 配合销售进行售前支持，完成产品售前培训工作；</p></td>
+       </tr>
+       <tr class="hang_title">
+         <td>任职要求：</td>
+       </tr>
+       <tr>
+         <td><p>1、本科及以上学历，3年以上软件工作经验。</p>
+           <p>2、具备用户需求系统化分析能力及用户体验细节把握的能力。</p>
+           <p>3、表达能力强，能够与用户，开发进行良好的沟通。</p>
+           <p>4、良好的逻辑思维能力，分析问题、解决问题的能力和执行力。</p>
+         <p>5、充满责任心、服务和敬业精神，适应高强度工作。</p></td>
+       </tr>
+       <tr>
+       	<td>有司法行业产品成功实施案例者优先考虑：</td>
+       </tr>
+     </table>
+       <br />
+   	 </div>
+	</div>
+<div class="ny_bot">
+  <p>&nbsp;</p>
+  <p>版权所有 2012-2014 杭州纳尧数据技术有限公司</p>
+  <p>7*24 全国客服热线：0571-56660221 http://www.nayaoinf.com </p>
+</div>
+<script type="text/javascript">
+jQuery(".fullSlide").hover(function() {
+    jQuery(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+},
+function() {
+    jQuery(this).find(".prev,.next").fadeOut()
+});
+jQuery(".fullSlide").slide({
+    titCell: ".hd ul",
+    mainCell: ".bd ul",
+    effect: "fold",
+    autoPlay: true,
+    autoPage: true,
+    trigger: "click",
+    startFun: function(i) {
+        var curLi = jQuery(".fullSlide .bd li").eq(i);
+        if ( !! curLi.attr("_src")) {
+            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+        }
+    }
+});
+</script>
+</body>
+</html>

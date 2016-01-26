@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>杭州纳尧数据技术有限公司</title>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/superslide.2.1.js"></script>
+</head>
+<body>
+<div class="nylogo"></div>
+<div class="nynav">
+<div class="nynavt">
+    <ul>
+      <li>
+        <a title="首页" href="index.html" class="k1"></a>
+      </li>
+      <li>
+        <a title="产品与解决方案" href="product.html" class="k2"></a></li>
+      <li>
+        <a title="市场与服务" href="market.html" class="k3"></a>
+      </li>
+      <li>
+        <a title="招贤纳士" href="jobs.html" class="k4"></a>
+      </li>
+      <li>
+        <a title="关于我们" href="about.html" class="k5 select"></a>
+      </li>
+    </ul>
+</div>
+</div>
+
+<div class="nybanner">
+  <div class="fullSlide">
+    <div class="bd">
+      <ul>
+        <li _src="url(images/img1.jpg)" style="background:#68a5e8 center 0 no-repeat;"><a href="#"></a></li>
+        <li _src="url(images/img2.jpg)" style="background:#68a5e8 center 0 no-repeat;"><a href="#"></a></li>
+        <li _src="url(images/img3.jpg)" style="background:#68a5e8 center 0 no-repeat;"><a href="#"></a></li>
+        <li _src="url(images/img4.jpg)" style="background:#68a5e8 center 0 no-repeat;"><a href="#"></a></li>
+      </ul>
+    </div>
+    <div class="hd">
+      <ul>
+      </ul>
+    </div>
+    <span class="prev"></span> <span class="next"></span></div>
+</div>
+	<div class="ny_middlen">
+   	 <div class="ny_gsjs">
+     <h3>&nbsp;</h3>
+     <img src="images/pic_dl2.gif" width="164" height="205" style="float:left; text-indent:0px; margin-right:15px;  margin-top:5px"/>
+     <div style="float:left"><h4>联系我们</h4><br />
+     <p>电 话：0571-56660221       </p>
+     <p>传 真：0571-88828223       </p>
+     <p>邮 箱：lqw@htinf.com</p>
+ 	 <p>  邮 编：310012</p>
+	 <p>地址：西湖区黄姑山路48号综合楼7楼718室 </p>
+</div>
+	<img src="images/map.gif" width="379" height="227" style="float:right; text-indent:0px; margin-right:15px;  margin-top:5px"/>
+     </div>
+     <div class="ny_gszz">
+     <h3>公司资质</h3>
+     <ul>
+     	<li style="margin-left:20px;"><img src="images/pic_zs1.gif"/><p>纳尧罪犯档案证据保全软件</p></li>
+        <li><img src="images/pic_zs2.gif"/><p>纳尧智能化应急指挥平台软件</p></li>
+        <li><img src="images/pic_zs3.gif"/><p>纳尧数字化监狱综合监管平台软件</p></li>
+        <li><img src="images/pic_zs4.gif"/><p>纳尧流动人口治安管理信息系统软件</p></li>
+        <li><img src="images/pic_zs5.gif"/><p>纳尧监狱狱情智能分析系统软件</p></li>
+     </ul>
+     </div>
+	</div>
+<div class="ny_bot">
+  <p>&nbsp;</p>
+  <p>版权所有 2012-2014 杭州纳尧数据技术有限公司</p>
+  <p>7*24 全国客服热线：0571-56660221 http://www.nayaoinf.com </p>
+</div>
+<script type="text/javascript">
+jQuery(".fullSlide").hover(function() {
+    jQuery(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+},
+function() {
+    jQuery(this).find(".prev,.next").fadeOut()
+});
+jQuery(".fullSlide").slide({
+    titCell: ".hd ul",
+    mainCell: ".bd ul",
+    effect: "fold",
+    autoPlay: true,
+    autoPage: true,
+    trigger: "click",
+    startFun: function(i) {
+        var curLi = jQuery(".fullSlide .bd li").eq(i);
+        if ( !! curLi.attr("_src")) {
+            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+        }
+    }
+});
+</script>
+</body>
+</html>
