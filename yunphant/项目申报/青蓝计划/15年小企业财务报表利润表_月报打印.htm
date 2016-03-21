@@ -1,0 +1,297 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+
+
+<META http-equiv="Content-Style-Type" content="text/css">
+<link rel="stylesheet" href="../css/print.css" type="text/css">
+<link rel="stylesheet" href="../css/wssb.css" type="text/css">
+<meta http-equiv="Content-Language" content="GBK">
+<meta http-equiv="content-type" content="text/html; charset=gb2312">  
+
+
+<html>
+<head>
+<title>小企业财务报表利润表_月报打印</title>
+</head>
+<body>
+<OBJECT  id="factory" style="DISPLAY:  none"  codeBase="../ScriptX.cab#Version=5,60,0,360"  classid="clsid:1663ed61-23eb-11d2-b92f-008048fdd814"  viewastext></OBJECT>
+<object id="button" style="DISPLAY:  none" classid="CLSID:8856F961-340A-11D0-A96B-00C04FD705A2"></object>
+<script language="JavaScript">
+function doprint() {
+  factory.printing.header = ""
+  factory.printing.footer = ""
+  factory.printing.leftMargin  =  0
+  factory.printing.topMargin  =  0
+  factory.printing.rightMargin  =  0
+  factory.printing.bottomMargin  =  0
+  factory.printing.portrait = true
+  document.all("printbtn").style.visibility = 'hidden';//打印时隐藏打印按钮 
+  factory.printing.Print(false);
+  document.all("printbtn").style.visibility = 'visible';//打印完显示打印按钮 
+ }
+ function printsetup(){ 
+　　// 打印页面设置 
+　　factory.printing.PageSetup(); 
+　　} 
+ function printpreview(){ 
+　　// 打印页面预览
+    factory.printing.header = ""
+    factory.printing.footer = ""
+    factory.printing.leftMargin  =  0
+    factory.printing.topMargin  =  0
+    factory.printing.rightMargin  =  0
+    factory.printing.bottomMargin  =  0
+    factory.printing.portrait = true
+    document.all("printbtn").style.visibility = 'hidden';//打印时隐藏打印按钮 
+　　factory.printing.Preview();
+    document.all("printbtn").style.visibility = 'visible';//打印完显示打印按钮 
+　　}
+function saveas(){ 
+　　// 打印页面另存为
+    document.all("printbtn").style.visibility = 'hidden';//打印时隐藏打印按钮 
+    document.all("printbtn").style.display = 'none';//打印时隐藏打印按钮 
+　　document.all.button.ExecWB(4,1);
+    //document.all("printbtn").style.visibility = 'visible';//打印完显示打印按钮 
+　　}
+function hide(){ 
+　　// 打印页面另存为
+    document.all("printbtn").style.visibility = 'hidden';//打印时隐藏打印按钮 
+    document.all("printbtn").style.display = 'none';//打印时隐藏打印按钮 
+　　//document.all("printbtn").style.visibility = 'visible';//打印完显示打印按钮 
+　　}
+ var SF=1,SF1=0.1,Max=3;
+</script>
+<div id="printbtn" align="center" style="DISPLAY:">
+<INPUT  type="button" name="Button" value="放大" onClick="if(SF<Max){SF+=SF1;MyDiv.style.zoom=SF;}"  align="middle">
+<INPUT onClick="if(SF>SF1){SF-=SF1;MyDiv.style.zoom=SF;}" type="button" name="Button" value="缩小" align="middle"> 
+<INPUT onclick=javascript:doprint() type="button" name="Button" value="打印" align="middle">
+<INPUT onclick=javascript:printsetup(); type="button" name="Button" value="打印设置" align="middle"> 
+<INPUT onclick=javascript:printpreview(); type="button" name="Button" value="打印预览" align="middle">
+<input type="button" name="Button" value="另存为" onClick="javascript:saveas()"> 
+<input type="button" name="Button" value="隐藏" onClick="javascript:hide()"> 
+</div>
+<Div id="MyDiv"> 
+
+<table width="700" align="center" >
+    <tr>
+       <td align="left"><div class="mypop"><b><p>　</p></div></b> </td>
+    </tr>
+    <tr>
+       <td width='600'><div class="pop" align="center" ><b>利　　润　　表</b></div></td>
+	   <td align="right">会小企02表</td>
+    </tr>
+  </table>
+
+  <table width="700" align="center" class="unnamed1">
+   <tr>
+     <td align="left" width="350">编制单位:杭州艾尚通智能科技有限公司 </td> 
+     <td align="center" width="350">2015年12月</td> 
+     <td align="right" width="350">单位：元</td>
+   </tr>
+  </table>  
+
+  <table id="tabList" width="717" border="1" cellspacing="0" cellpadding="0" bordercolorlight="#000000" bordercolordark="#FFFFFF" align="center" class="style_tab">                              
+    <tr>
+      <td class="style_td" width="392"  align="center"  >项目</td>
+      <td class="style_td" width="59"  align="center"  >行次</td>
+      <td class="style_td" width="117" align="center"  >本年累计金额</td>
+      <td class="style_td" width="120" align="center"  >本月金额</td>
+    </tr>
+
+    <tr>
+      <td class="style_td"    >一、营业收入</td>
+      <td class="style_td" align="center"    >1</td>
+      <td class="style_td" align="right">421640.78</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+    <tr> 
+      <td class="style_td"    >　　减：营业成本</td>
+      <td class="style_td" align="center"    >2</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+    <tr>
+      <td class="style_td"    >　　营业税金及附加</td>
+      <td class="style_td" align="center"    >3</td>
+      <td class="style_td" align="right">1928.9</td>
+      <td class="style_td" align="right">58.25</td>
+    <tr>
+      <td class="style_td"    >　　其中：消费税</td>
+      <td class="style_td" align="center"    >4</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+    <tr>
+      <td class="style_td"    >　　营业税</td>
+      <td class="style_td" align="center"    >5</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+    <tr>
+      <td class="style_td"    >　　城市维护建设税</td>
+      <td class="style_td" align="center"    >6</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+    <tr>
+      <td class="style_td"    >　　资源税</td>
+      <td class="style_td" align="center"    >7</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+    <tr>
+      <td class="style_td"    >　　土地增值税</td>
+      <td class="style_td" align="center"    >8</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+    <tr>
+      <td class="style_td"    >　　城镇土地使用税、房产税、车船税、印花税 </td>
+      <td class="style_td" align="center"    >9</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+    <tr>
+      <td class="style_td"     >　　教育费附加、矿产资源补偿费、排污费  </td>
+      <td class="style_td" align="center"     >10</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+	<tr>
+      <td class="style_td"     >　　销售费用 </td>
+      <td class="style_td" align="center"     >11</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+	<tr>
+      <td class="style_td"     >　　其中：商品维修费 </td>
+      <td class="style_td" align="center"     >12</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+	<tr>
+      <td class="style_td"     >　　广告费和业务宣传费</td>
+      <td class="style_td" align="center"     >13</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+	<tr>
+      <td class="style_td"     >　　管理费用</td>
+      <td class="style_td" align="center"     >14</td>
+      <td class="style_td" align="right">400770.68</td>
+      <td class="style_td" align="right">159502.75</td>
+    </tr>
+	<tr>
+      <td class="style_td"     >　　其中：开办费 </td>
+      <td class="style_td" align="center"     >15</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+	<tr>
+      <td class="style_td"     >　　业务招待费 </td>
+      <td class="style_td" align="center"     >16</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+	<tr>
+      <td class="style_td"     >　　研究费用 </td>
+      <td class="style_td" align="center"     >17</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+
+	<tr>
+      <td class="style_td"     >　　财务费用  </td>
+      <td class="style_td" align="center"     >18</td>
+      <td class="style_td" align="right">615</td>
+      <td class="style_td" align="right">329.29</td>
+    </tr>
+	<tr>
+      <td class="style_td"     >　　其中：利息费用（收入以“-”号填列） </td>
+      <td class="style_td" align="center"     >19</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+	<tr>
+      <td class="style_td"     >　　加：投资收益（损失以“-”号填列） </td>
+      <td class="style_td" align="center"     >20</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+    <tr>
+      <td class="style_td"    >	二、营业利润（亏损以“-”号填列）</td>
+      <td class="style_td" align="center"    >21</td>
+      <td class="style_td" align="right">18326.2</td>
+      <td class="style_td" align="right">-159890.29</td>
+    </tr>
+    <tr>
+      <td class="style_td"    >　　加：营业外收入</td>
+      <td class="style_td" align="center"    >22</td>
+      <td class="style_td" align="right">668.13</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+	<tr>
+      <td class="style_td"    >　　其中：政府补助</td>
+      <td class="style_td" align="center"    >23</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+    <tr>
+      <td class="style_td"    >　　减：营业外支出</td>
+      <td class="style_td" align="center"    >24</td>
+      <td class="style_td" align="right">30.54</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+    <tr>
+      <td class="style_td"    >　　其中：坏账损失</td>
+      <td class="style_td" align="center"    >25</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+	<tr>
+      <td class="style_td"    >　　无法收回的长期债券投资损失</td>
+      <td class="style_td" align="center"    >26</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+	<tr>
+      <td class="style_td"    >　　无法收回的长期股权投资损失</td>
+      <td class="style_td" align="center"    >27</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+	<tr>
+      <td class="style_td"    >　　自然灾害等不可抗力因素造成的损失</td>
+      <td class="style_td" align="center"    >28</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+	<tr>
+      <td class="style_td"    >　　税收滞纳金</td>
+      <td class="style_td" align="center"    >29</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+    <tr>
+      <td class="style_td"    >三、利润总额（亏损总额以“-”号填列）</td>
+      <td class="style_td" align="center"    >30</td>
+      <td class="style_td" align="right">18963.79</td>
+      <td class="style_td" align="right">-159890.29</td>
+    </tr>
+    <tr>
+      <td class="style_td"    >　　减：所得税费用</td>
+      <td class="style_td" align="center"    >31</td>
+      <td class="style_td" align="right">0</td>
+      <td class="style_td" align="right">0</td>
+    </tr>
+    <tr>
+      <td class="style_td"    >四、净利润（净亏损以“-”号填列）</td>
+      <td class="style_td" align="center"    >32</td>
+      <td class="style_td" align="right">18963.79</td>
+      <td class="style_td" align="right">-159890.29</td>
+    </tr>
+  </table>
+
+</div> 
+</body>
+</html>

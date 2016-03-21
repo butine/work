@@ -1,0 +1,443 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+
+
+<META http-equiv="Content-Style-Type" content="text/css">
+<link rel="stylesheet" href="../css/print.css" type="text/css">
+<link rel="stylesheet" href="../css/wssb.css" type="text/css">
+<meta http-equiv="Content-Language" content="GBK">
+<meta http-equiv="content-type" content="text/html; charset=gb2312">  
+
+
+<html>
+<head>
+<title>资产负债表申报表</title>
+</head>
+<body>
+<OBJECT  id="factory" style="DISPLAY:  none"  codeBase="../ScriptX.cab#Version=5,60,0,360"  classid="clsid:1663ed61-23eb-11d2-b92f-008048fdd814"  viewastext></OBJECT>
+<object id="button" style="DISPLAY:  none" classid="CLSID:8856F961-340A-11D0-A96B-00C04FD705A2"></object>
+<script language="JavaScript">
+function doprint() {
+  factory.printing.header = ""
+  factory.printing.footer = ""
+  factory.printing.leftMargin  =  0
+  factory.printing.topMargin  =  0
+  factory.printing.rightMargin  =  0
+  factory.printing.bottomMargin  =  0
+  factory.printing.portrait = true
+  document.all("printbtn").style.visibility = 'hidden';//打印时隐藏打印按钮 
+  factory.printing.Print(false);
+  document.all("printbtn").style.visibility = 'visible';//打印完显示打印按钮 
+ }
+ function printsetup(){ 
+　　// 打印页面设置 
+　　factory.printing.PageSetup(); 
+　　} 
+ function printpreview(){ 
+　　// 打印页面预览
+    factory.printing.header = ""
+    factory.printing.footer = ""
+    factory.printing.leftMargin  =  0
+    factory.printing.topMargin  =  0
+    factory.printing.rightMargin  =  0
+    factory.printing.bottomMargin  =  0
+    factory.printing.portrait = true
+    document.all("printbtn").style.visibility = 'hidden';//打印时隐藏打印按钮 
+　　factory.printing.Preview();
+    document.all("printbtn").style.visibility = 'visible';//打印完显示打印按钮 
+　　}
+function saveas(){ 
+　　// 打印页面另存为
+    document.all("printbtn").style.visibility = 'hidden';//打印时隐藏打印按钮 
+    document.all("printbtn").style.display = 'none';//打印时隐藏打印按钮 
+　　document.all.button.ExecWB(4,1);
+    //document.all("printbtn").style.visibility = 'visible';//打印完显示打印按钮 
+　　}
+function hide(){ 
+　　// 打印页面另存为
+    document.all("printbtn").style.visibility = 'hidden';//打印时隐藏打印按钮 
+    document.all("printbtn").style.display = 'none';//打印时隐藏打印按钮 
+　　//document.all("printbtn").style.visibility = 'visible';//打印完显示打印按钮 
+　　}
+ var SF=1,SF1=0.1,Max=3;
+</script>
+<div id="printbtn" align="center" style="DISPLAY:">
+<INPUT  type="button" name="Button" value="放大" onClick="if(SF<Max){SF+=SF1;MyDiv.style.zoom=SF;}"  align="middle">
+<INPUT onClick="if(SF>SF1){SF-=SF1;MyDiv.style.zoom=SF;}" type="button" name="Button" value="缩小" align="middle"> 
+<INPUT onclick=javascript:doprint() type="button" name="Button" value="打印" align="middle">
+<INPUT onclick=javascript:printsetup(); type="button" name="Button" value="打印设置" align="middle"> 
+<INPUT onclick=javascript:printpreview(); type="button" name="Button" value="打印预览" align="middle">
+<input type="button" name="Button" value="另存为" onClick="javascript:saveas()"> 
+<input type="button" name="Button" value="隐藏" onClick="javascript:hide()"> 
+</div>
+<Div id="MyDiv"> 
+
+  <table width="780" align="center" >
+    <tr>
+       <td align="left"><div class="mypop"><b><p>　</p></div></b> </td>
+    </tr>
+    <tr>
+       <td width='680'><div class="pop" align="center" ><b>资　　产　　负　　债　　表</b></div></td>
+	   <td align="right">会小企01表</td>
+    </tr>
+  </table>
+  <table width="780" align="center" class="unnamed1">
+   <tr>
+     <td align="left" width="350">编制单位:杭州艾尚通智能科技有限公司 </td> 
+     <td align="center" width="350">2014年12月31日</td>
+     <td align="right" width="350">单位：元</td>
+   </tr> 
+  </table>       
+  <table id="tabList" width="780" border="1" cellspacing="0" cellpadding="0" bordercolorlight="#000000" bordercolordark="#FFFFFF" align="center" class="style_tab">                                 
+    <tr>   
+      <td class="style_td" width="158"   align="center">资产</td>   
+      <td class="style_td" width="19"    align="center">行次</td>   
+      <td class="style_td" width="84"    align="center" height="20">期末余额</td>   
+      <td class="style_td" width="84"    align="center">年初余额</td>   
+      <td class="style_td" width="226"   align="center">负债及所有者权益</td>   
+      <td class="style_td" width="23"    align="center">行次</td>   
+      <td class="style_td" width="84"    align="center" >期末余额</td>   
+      <td class="style_td" width="84"    align="center" >年初余额</td>   
+    </tr>     
+    <tr>   
+      <td class="style_td"    height="20">流动资产：</td>   
+      <td class="style_td"    >&nbsp;</td>   
+      <td class="style_td"   >　 &nbsp;</td>
+       
+      <td class="style_td"   >　 &nbsp;</td>
+      
+         
+      <td class="style_td"    >流动负债：</td>   
+      <td class="style_td"    >&nbsp;</td>   
+      <td class="style_td"   > &nbsp;　</td>
+        
+      <td class="style_td"   >　 &nbsp;</td>
+      
+    </tr>   
+    <tr>   
+      <td class="style_td"    height="20">　　货币资金:</td>   
+      <td class="style_td"    >1</td>   
+      <td class="style_td" align="right">52138.56</td>   
+      <td class="style_td" align="right">900.58</td>   
+      <td class="style_td"    >　　短期借款</td>   
+      <td class="style_td"    >31</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td" align="right">0</td>   
+    </tr>   
+    <tr>   
+      <td class="style_td"    height="20">　　短期投资</td>   
+      <td class="style_td"     >2</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td"     >　　应付票据</td>   
+      <td class="style_td"     >32</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+    </tr>   
+
+    <tr>   
+      <td class="style_td"    height="20">　　应收票据</td>   
+      <td class="style_td"     >3</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td"     >　　应付帐款</td>   
+      <td class="style_td"     >33</td>   
+      <td class="style_td" align="right" >28802</td>   
+      <td class="style_td" align="right" >0</td>   
+    </tr>   
+    <tr>   
+      <td class="style_td"    height="20">　　应收帐款</td>   
+      <td class="style_td"     >4</td>   
+      <td class="style_td" align="right" >69000</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td"     >　　预收账款</td>   
+      <td class="style_td"     >34</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+    </tr>
+    <tr>   
+      <td class="style_td"    height="20">　　预付款项</td>   
+      <td class="style_td"     >5</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td"    >　　应付职工薪酬</td>   
+      <td class="style_td"     >35</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+    </tr>
+    <tr>   
+      <td class="style_td"    height="20">　　应收股利</td>   
+      <td class="style_td"     >6</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td"    >　　应交税费</td>   
+      <td class="style_td"     >36</td>   
+      <td class="style_td" align="right" >4568.46</td>   
+      <td class="style_td" align="right" >20</td>   
+    </tr>   
+    <tr>   
+      <td class="style_td"    height="20">　　应收利息</td>   
+
+      <td class="style_td"     >7</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td"     >　　应付利息</td>   
+      <td class="style_td"     >37</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+    </tr>   
+    <tr>   
+      <td class="style_td"    height="20">　　其他应收款</td>   
+      <td class="style_td"     >8</td>   
+      <td class="style_td" align="right" >36.51</td>   
+      <td class="style_td" align="right" >95714</td>   
+      <td class="style_td"     >　　应付利润</td>   
+      <td class="style_td"     >38</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+    </tr>
+    <tr>   
+      <td class="style_td"    height="20">　　存货</td>   
+      <td class="style_td"    >9</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td"     >　　其他应付款</td>   
+      <td class="style_td"     >39</td>   
+      <td class="style_td" align="right" >-558</td>   
+      <td class="style_td" align="right" >0</td>   
+    </tr>   
+    <tr>   
+      <td class="style_td"    height="20">　　其中：原材料</td>   
+      <td class="style_td"   >10</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td"   >　　其他流动负债</td>   
+      <td class="style_td"   >40</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td" align="right">0</td>   
+    </tr>   
+    
+    <tr>   
+      <td class="style_td"   height="20">　　在产品</td>   
+      <td class="style_td"  >11</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td"  >　　流动负债合计</td>   
+      <td class="style_td"  >41</td>   
+      <td class="style_td" align="right">32812.46</td>   
+      <td class="style_td" align="right">20</td>   
+    </tr>
+	
+	<tr>   
+      <td class="style_td"   height="20">　　库存商品</td>   
+      <td class="style_td"  >12</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td"  >非流动负债:</td>   
+      <td class="style_td"  >&nbsp;</td>   
+      <td class="style_td"  >&nbsp;</td>   
+      <td class="style_td"   >&nbsp;</td>  
+    </tr>
+	
+	<tr>   
+      <td class="style_td"   height="20">　　周转材料</td>   
+      <td class="style_td"  >13</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td"  >　　长期借款</td>   
+      <td class="style_td"  >42</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td" align="right">0</td>   
+    </tr>
+	
+	<tr>   
+      <td class="style_td"   height="20">　　其他流动资产</td>   
+      <td class="style_td"  >14</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td"  >　　长期应付款</td>   
+      <td class="style_td"  >43</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td" align="right">0</td>   
+    </tr>
+       
+    <tr>   
+      <td class="style_td"   height="20">　　流动资产合计</td>   
+      <td class="style_td"  >15</td>   
+      <td class="style_td" align="right">121175.07</td>   
+      <td class="style_td" align="right">96614.58</td>   
+      <td class="style_td"  >　　递延收益</td>   
+      <td class="style_td"  >44</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td" align="right">0</td>   
+    </tr>   
+     
+    <tr>   
+      <td class="style_td"   height="20">非流动资产：</td>   
+      <td class="style_td"  >&nbsp;</td>   
+      <td class="style_td"  > &nbsp;　</td>
+        
+      <td class="style_td"  >　 &nbsp;</td>
+     
+      <td class="style_td"  >　其他非流动负债</td>   
+      <td class="style_td"  >45</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td" align="right">0</td>   
+    </tr>   
+    <tr>   
+      <td class="style_td"   height="20">　　长期债券投资</td>   
+      <td class="style_td"  >16</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td"  >非流动负债合计</td>   
+      <td class="style_td"  >46</td>   
+      <td class="style_td" align="right"  >0</td>  
+      <td class="style_td" align="right"  >0</td>
+    </tr>   
+    <tr>   
+      <td class="style_td"    height="20">　　长期股权投资</td>   
+      <td class="style_td"     >17</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td"     >　　负债合计</td>   
+      <td class="style_td"     >47</td>   
+      <td class="style_td" align="right" >32812.46</td>   
+      <td class="style_td" align="right" >20</td>   
+    </tr>
+    
+    <tr>   
+      <td class="style_td"     height="20">　　固定资产原价</td>   
+      <td class="style_td"     >18</td>   
+      <td class="style_td" align="right" >7395</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td"     >　　</td>   
+      <td class="style_td"      >&nbsp;</td>   
+      <td class="style_td"    >&nbsp;</td>   
+      <td class="style_td"    >&nbsp;</td>   
+    </tr> 
+    <tr>   
+      <td class="style_td"    height="20">　　减：累计折旧</td>   
+      <td class="style_td"    >19</td>   
+      <td class="style_td" align="right">57.96</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td"    >　　</td>   
+      <td class="style_td"    >&nbsp;</td>   
+      <td class="style_td"   >&nbsp;</td>   
+      <td class="style_td"   >&nbsp;</td>   
+    </tr>   
+    <tr>   
+      <td class="style_td"    height="20">　　固定资产账面价值</td>   
+      <td class="style_td"     >20</td>   
+      <td class="style_td" align="right" >7337.04</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td"    >　</td>   
+      <td class="style_td"    >&nbsp;</td>   
+      <td class="style_td"   >&nbsp;</td>   
+      <td class="style_td"   >&nbsp;</td>   
+    </tr>
+    <tr>   
+      <td class="style_td"    height="20">　　在建工程</td>   
+      <td class="style_td"    >21</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td"    >　　</td>   
+      <td class="style_td"     >&nbsp;</td>   
+      <td class="style_td"   >&nbsp;</td>   
+      <td class="style_td"   >&nbsp;</td>   
+    </tr>
+    <tr>   
+      <td class="style_td"    height="20">　　工程物资</td>   
+      <td class="style_td"     >22</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td"    >　　</td>   
+      <td class="style_td"     >&nbsp;</td>   
+      <td class="style_td"   >&nbsp;</td>   
+      <td class="style_td"   >&nbsp;</td>   
+    </tr>   
+    <tr>   
+      <td class="style_td"    height="20">　　固定资产清理</td>   
+      <td class="style_td"    >23</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td"    >&nbsp;</td>   
+      <td class="style_td"    >&nbsp;</td>   
+      <td class="style_td"   >&nbsp;</td>   
+      <td class="style_td"   >&nbsp;</td>   
+    </tr>   
+    <tr>   
+      <td class="style_td"    height="20">　　生产性生物资产</td>   
+      <td class="style_td"     >24</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td"     >所有者权益（或股东权益）：</td>   
+      <td class="style_td"     >&nbsp;</td>   
+      <td class="style_td"    >&nbsp;</td>   
+      <td class="style_td"    >&nbsp;</td>  
+    </tr>   
+    
+    <tr>   
+      <td class="style_td"    height="20">　　无形资产</td>   
+      <td class="style_td"     >25</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td"     >　　实收资本（或股本）</td>   
+      <td class="style_td"     >48</td>   
+      <td class="style_td" align="right" >100000</td>   
+      <td class="style_td" align="right" >100000</td>   
+    </tr>   
+    <tr>   
+      <td class="style_td"    height="20">　　开发支出</td>   
+      <td class="style_td"     >26</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td"    >&nbsp;&nbsp;资本公积</td>   
+      <td class="style_td"    >49</td>
+      <td class="style_td" align="right"   >0</td>      
+      <td class="style_td" align="right"   >0</td> 
+    </tr>   
+    <tr>   
+      <td class="style_td"    height="20">　　长期待摊费用</td>   
+      <td class="style_td"     >27</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td"    >&nbsp;&nbsp;盈余公积</td>   
+      <td class="style_td"    >50</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+    </tr>
+    <tr>   
+      <td class="style_td"    height="20">　　其他非流动资产</td>   
+      <td class="style_td"     >28</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td" align="right" >0</td>   
+      <td class="style_td"     >　　未分配利润</td>   
+      <td class="style_td"     >51</td>   
+      <td class="style_td" align="right" >-4300.35</td>   
+      <td class="style_td" align="right" >-3405.42</td>   
+    </tr>   
+    <tr>   
+      <td class="style_td"    height="20">　　非流动资产合计</td>   
+      <td class="style_td"    >29</td>   
+      <td class="style_td" align="right">7337.04</td>   
+      <td class="style_td" align="right">0</td>   
+      <td class="style_td"    >所有者权益（或股东权益）合计 </td>   
+      <td class="style_td"    >52</td>   
+      <td class="style_td" align="right">95699.65</td> 
+      <td class="style_td" align="right">96594.58</td>  
+    </tr>   
+    <tr>   
+      <td class="style_td"    height="20">资产总计</td>   
+      <td class="style_td"   >30</td>   
+      <td class="style_td" align="right">128512.11</td>   
+      <td class="style_td" align="right">96614.58</td>   
+      <td class="style_td"   >负债和所有者权益（或股东权益）总计</td>   
+      <td class="style_td"   >53</td>   
+      <td class="style_td" align="right" >128512.11</td>   
+      <td class="style_td" align="right" >96614.58</td>   
+    </tr>   
+  </table>
+
+</div> 
+</body>  
+</html>
