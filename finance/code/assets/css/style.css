@@ -1,0 +1,299 @@
+﻿
+/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
+
+
+/*=======================================
+    GENERAL STYLES
+==================================================*/
+
+body {
+          font-family:'Open Sans', sans-serif;
+    font-size:14px;
+}
+
+.pad-adjust {
+    padding-top: 5px; 
+    padding-bottom: 5px;
+}
+
+.text-center {
+    text-align:center;
+}
+
+
+p {
+    font-weight:300;
+    line-height:30px;
+    padding-bottom:20px;
+}
+
+
+.space-free {
+    height:100px;
+}
+
+
+
+.g-pad-bottom {
+    padding-bottom:40px;
+}
+.for-full-back {
+     /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+
+  /* IE 5-7 */
+  filter: alpha(opacity=90);
+
+  /* Netscape */
+  -moz-opacity: 0.9;
+
+  /* Safari 1.x */
+  -khtml-opacity: 0.9;
+
+  /* Good browsers */
+  opacity: 0.9;
+}
+
+section {
+    padding-top:50px;
+}
+
+
+
+/*=======================================
+    NAV BAR STYLES
+==================================================*/
+/* ADDED PADDING IN NAVBAR */
+.navbar {
+    padding:10px;
+     -webkit-transition: background .8s ease-out,padding .8s ease-out;
+        -moz-transition: background .8s ease-out,padding .8s ease-out;
+        transition: background .8s ease-out,padding .8s ease-out;
+}
+/* CLASS FOR REMOVING PADDING IN NAVBAR*/
+.navbar-pad-original {
+      padding:0px;
+}
+
+
+/*TO MAKING NAV BAR LINKS WHITE COLORED */
+.navbar-inverse .navbar-nav > li > a {
+color: #FFF;
+}
+
+.navbar-inverse .navbar-brand {
+color: #FFF;
+}
+
+.navbar-inverse {
+background-color: rgba(20, 173, 124, 1);
+border-color: rgba(20, 173, 124, 1)
+}
+ 
+/*=======================================
+    HOME SECTION STYLES
+==================================================*/
+
+
+.head-btn-one {
+    background-color: rgba(20, 173, 124, 1);
+     border: 0px solid #fff;
+
+}
+
+#home {
+    padding-top:130px;
+    padding-bottom:200px;
+    color:#fff;
+}
+.head-main {
+    font-size:50px ;
+    font-weight:900;
+    
+}
+
+.head-last {
+    font-size:20px ;
+    font-weight:300;
+    padding:5px 20px 20px 20px;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+border-radius: 0px; 
+
+}
+
+/*=======================================
+    ABOUT SECTION STYLES
+==================================================*/
+
+.team-member {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.team-member > img {
+    float: left;
+    width: 100%;
+}
+.team-member > h3 {
+    background: rgba(20, 173, 124, 1);
+    bottom: 25px;
+    color:#fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    padding: 15px 0;
+    position: absolute;
+    text-align: center;  
+    width: 100%;
+   line-height:25px;
+}
+
+
+/*=======================================
+    CLIENT TESTIMONIAL STYLES
+==================================================*/
+
+
+#clients-testimonial {
+    color:#fff;
+}
+#carousel-example {
+    margin-top:50px;
+
+}
+.slide-custom {
+    min-height:200px;
+    padding:20px;
+    line-height:30px;
+}
+h4 i{
+   padding:5px;
+}
+.user-img {
+border: 2px solid #fff;
+overflow: hidden;
+border-radius: 50%;
+display: inline-block;
+}
+
+.img-u {
+   max-height: 90px;
+max-width: 90px;
+}
+
+.c-black {
+    color:#fff;
+    font-style: italic;
+font-size: 20px;
+padding: 5px;
+}
+/*=======================================
+    PRICE SECTION STYLES
+==================================================*/
+
+
+.plan {
+   
+    padding: 0 0 15px 0;
+    margin: 30px 0px;
+    list-style: none;
+    text-align: center;
+  
+}
+
+.plan li {
+    padding: 20px 0px;
+    color: #434749;
+}
+
+.price {
+    font-size:30px;
+}
+/*=======================================
+    STATS SECTION STYLES
+==================================================*/
+.stats-div {
+    text-align:center;
+    width: 100%;
+    min-height: 100px;
+    padding: 30px 20px 30px 20px;
+    color:#fff;
+}
+
+.stats-div > h3 {
+    font-size:60px;
+    font-weight:900;
+}
+
+/*=======================================
+    CONTACT STYLES
+==================================================*/
+#contact-inner {
+    padding-bottom:60px;
+    padding-bottom:50px;
+}
+
+/*=======================================
+    COLOR CODES
+==================================================*/
+
+.color-bg-one {
+    background-color:rgba(20, 173, 124, 1)!important;
+    color:#fff;
+}
+.color-white {
+   background-color:#fff!important;
+}
+#add {
+    font-size:30px;
+    line-height:40px;
+    
+}
+#contact-inner .form-control {
+   
+    height: 55px;
+}
+
+/*=======================================
+    SOCIAL SECTION STYLES
+==================================================*/
+
+.scl {
+    background:rgba(20, 173, 124, 1);
+    
+    color:#fff;
+}
+    .scl h4 {
+        font-size:40px;
+    }
+    .scl a {
+        color:#fff;
+    }
+.scl-dark-bk {
+    background:rgb(13, 138, 98);
+}
+/*=======================================
+    FOOTER STYLES
+==================================================*/
+
+
+#footer {
+    color:#fff;
+    padding:20px 50px 20px 50px;
+    text-align:right;
+    background-color:rgba(20, 173, 124, 1);
+}
+
+
+
